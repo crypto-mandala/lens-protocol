@@ -12,6 +12,8 @@ services:
     volumes:
       - ./:/src:rw
       - $HOME/.tenderly/config.yaml:/root/.tenderly/config.yaml:ro
+    ports:
+      - '8545:8545'
     #environment:
       #- MNEMONIC=
       #- ETHERSCAN_KEY=
